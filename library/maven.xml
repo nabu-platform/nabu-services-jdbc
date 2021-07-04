@@ -9,4 +9,6 @@
 <provided>be.nabu.libs.validator:validator-api</provided>
 <provided>be.nabu.libs.validator:validator-base</provided>
 <provided>be.nabu.libs.services:services-api</provided>
+<provided>be.nabu.libs.services:services-pojo</provided>
+<provided>be.nabu.eai:eai-repository</provided>
 <updateSnapshots>false</updateSnapshots></maven>
