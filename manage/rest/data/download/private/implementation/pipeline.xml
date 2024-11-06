@@ -1,0 +1,6 @@
+<structure interface="nabu.services.jdbc.manage.rest.data.download:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure definition="nabu.services.jdbc.manage.rest.data.container" name="container"/>
+    <structure definition="org.apache.poi.ss.usermodel.Workbook" minOccurs="0" name="workbook"/>
+</structure>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2024-10-17T14:09:51.089+02:00" lastModified="2024-10-17T15:20:17.609+02:00" leaf="true" version="11">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.services.jdbc.Services.selectDynamic</references>
+    <references>nabu.services.jdbc.manage.rest.data.queryInput</references>
+    <references>nabu.services.jdbc.Services.page</references>
+    <references>nabu.services.jdbc.manage.rest.data.queryOutput</references>
+</node>

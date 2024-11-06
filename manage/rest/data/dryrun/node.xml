@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2024-10-18T09:46:42.226+02:00" lastModified="2024-10-18T12:56:53.949+02:00" leaf="true" version="23">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.services.jdbc.manage.rest.data.dryRunOutput</references>
+    <references>nabu.utils.Object.mapByKey</references>
+    <references>nabu.utils.types.TypeResult</references>
+    <references>nabu.utils.types.ParameterDescription</references>
+    <references>nabu.utils.List.hash</references>
+    <references>nabu.utils.reflection.Type.getAll</references>
+    <references>nabu.utils.reflection.Type.describe</references>
+    <references>nabu.services.jdbc.manage.rest.data.parse</references>
+    <references>nabu.services.jdbc.Services.selectFiltered</references>
+    <references>nabu.utils.Map.get</references>
+    <references>nabu.utils.Object.first</references>
+    <references>java.util.Map</references>
+    <references>java.lang.Boolean</references>
+    <references>java.lang.Object</references>
+    <references>java.lang.String</references>
+    <references>java.io.InputStream</references>
+</node>

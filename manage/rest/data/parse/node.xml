@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-18T09:48:06.140+02:00" lastModified="2024-10-18T09:52:05.587+02:00" leaf="true" version="8">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.data.xml.Services.unmarshal</references>
+    <references>nabu.data.excel.Services.sheets</references>
+    <references>org.apache.poi.ss.usermodel.Workbook</references>
+    <references>java.lang.String</references>
+    <references>nabu.services.jdbc.manage.rest.data.container</references>
+    <references>nabu.data.excel.Services.toObject</references>
+    <references>java.io.InputStream</references>
+    <references>nabu.data.excel.Services.parse</references>
+</node>

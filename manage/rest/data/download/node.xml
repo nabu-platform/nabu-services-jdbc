@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2024-10-17T14:15:20.677+02:00" lastModified="2024-10-18T14:56:11.630+02:00" leaf="true" version="29">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.services.jdbc.Services.selectDynamic</references>
+    <references>nabu.utils.String.toStream</references>
+    <references>nabu.data.excel.Services.toStream</references>
+    <references>nabu.services.jdbc.manage.rest.data.queryInput</references>
+    <references>nabu.protocols.jdbc.pool.Services.information</references>
+    <references>nabu.services.jdbc.manage.rest.data.container</references>
+    <references>nabu.data.xml.Services.marshal</references>
+    <references>nabu.data.excel.Services.newWorkbook</references>
+    <references>nabu.data.excel.Services.toSheet</references>
+    <references>nabu.utils.String.join</references>
+    <references>org.apache.poi.ss.usermodel.Workbook</references>
+    <references>nabu.services.jdbc.Services.buildInserts</references>
+    <references>java.lang.Long</references>
+    <references>java.lang.String</references>
+    <references>nabu.protocols.jdbc.pool.Services.connectionForContext</references>
+    <references>java.io.InputStream</references>
+</node>

@@ -1,0 +1,11 @@
+<structure interface="nabu.services.jdbc.manage.rest.data.dryrun:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure definition="nabu.utils.types.ParameterDescription" minOccurs="0" name="primaryKey"/>
+    <structure definition="nabu.utils.types.TypeResult" maxOccurs="unbounded" minOccurs="0" name="keys"/>
+    <structure definition="java.lang.Object" maxOccurs="unbounded" minOccurs="0" name="existing"/>
+    <structure definition="nabu.utils.types.TypeResult" maxOccurs="unbounded" minOccurs="0" name="existingKeys"/>
+    <structure collectionHandler="stringMap" definition="java.util.Map" minOccurs="0" name="hashed"/>
+    <structure definition="java.lang.Object" minOccurs="0" name="existingObject"/>
+    <field name="changed" type="java.lang.Boolean"/>
+</structure>

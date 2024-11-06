@@ -1,0 +1,5 @@
+<structure interface="nabu.services.jdbc.manage.rest.data.merge:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure definition="nabu.services.jdbc.manage.rest.data.container" name="container"/>
+</structure>

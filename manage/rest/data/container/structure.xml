@@ -1,0 +1,5 @@
+<structure name="container">
+    <field minOccurs="0" name="query" type="java.lang.String"/>
+    <field name="typeId" type="java.lang.String"/>
+    <structure definition="java.lang.Object" maxOccurs="unbounded" minOccurs="0" name="results"/>
+</structure>

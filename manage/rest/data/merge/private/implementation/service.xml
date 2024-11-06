@@ -1,0 +1,85 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="c42301aee60d4c6fa05c9d8651e11b0a"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="3ca1183c074e48aea126bea5f7c6680c"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="ba41a2d521ab40d391b442ae7d5b3da2"
+				serviceId="nabu.services.jdbc.manage.rest.data.parse"
+				resultName="result66f402d6daa743cd93f4b987e90db95a"
+				temporaryMapping="true"
+				x="176"
+				y="142"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="e9f86c8bfc244db8aedff06292bc9fa0"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/content</from>
+				<to>stream</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="7bb6ef8ce4004e649a1eb696e56b32b0"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/path/format</from>
+				<to>format</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="1fc4ab6d6ffb482e9965f4ad78d773db"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result66f402d6daa743cd93f4b987e90db95a/container</from>
+			<to>container</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="0d5c203e86624a8ab91e300e722902f5"
+			label="container/results"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="7001cbbcd4214b20b189d4fe979a42c6"
+				serviceId="nabu.services.jdbc.Services.merge"
+				resultName="result5ee17a1f90144d80809e39508c005608"
+				temporaryMapping="true"
+				x="253"
+				y="193"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="fc154866f1be4b0b862c3458f70ae1d1"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>container/results</from>
+				<to>instances</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="488306835e114a69a944b77d5b98a015"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>container</from>
+			<to>output/content</to>
+		</steps>
+	</steps>
+</sequence>

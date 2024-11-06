@@ -1,0 +1,5 @@
+<structure name="dryRunResult">
+    <field name="primaryKey" type="java.lang.String"/>
+    <field name="index" type="java.lang.Long"/>
+    <field name="action" type="java.lang.String"/>
+</structure>

@@ -1,0 +1,222 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="49a3a4a343084a43996a7a5ecc3ca721"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Switch"
+			disabled="false"
+			id="8bad06fa013146c3847f9f4fd8c6da15"
+			lineNumber="2"
+			query="input/format">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+				disabled="false"
+				id="3ca1183c074e48aea126bea5f7c6680c"
+				label="&quot;xml&quot;"
+				lineNumber="3">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+					disabled="false"
+					id="f0676c20a003418fa434c832f670f014"
+					serviceId="nabu.data.xml.Services.unmarshal"
+					resultName="resulte5811603658d4e1c849a0f02db0ae6e0"
+					temporaryMapping="true"
+					x="130"
+					y="79"
+					invocationOrder="0"
+					asynchronous="false"
+					recache="false">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="8b9037c3613d47209282e8b8c636e908"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>nabu.services.jdbc.manage.rest.data.container</from>
+					<to>type</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="237a7b63321c429ab7880033c116e4ed"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>UTF-8</from>
+					<to>charset</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="faa315669c814fd4a7b7552319251d89"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>input/stream</from>
+					<to>input</to>
+				</steps>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="ef1d8100811043c488e8011e2195d917"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>resulte5811603658d4e1c849a0f02db0ae6e0/unmarshalled</from>
+				<to>output/container</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Sequence"
+				disabled="false"
+				id="d56266ac90464dbbb18e2ee1dbde08c5"
+				label="&quot;excel&quot;"
+				lineNumber="4">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+					disabled="false"
+					id="3df17ad314ac45e8b29fe044687ed369"
+					lineNumber="5">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+						disabled="false"
+						id="96de815bde484e40b1d82565323dd26c"
+						serviceId="nabu.data.excel.Services.sheets"
+						resultName="result41f65a8b8f514200b96d7292dc8bc134"
+						temporaryMapping="true"
+						x="516"
+						y="156"
+						invocationOrder="1"
+						asynchronous="false"
+						recache="false">
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="f780d0bf8a46439cb233e3788f3e9206"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>resultad1f9b83e9b245039b492d0568465388/workbook</from>
+						<to>workbook</to>
+					</steps>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+						disabled="false"
+						id="ce14e3db6bcb49168dc9450450057323"
+						serviceId="nabu.data.excel.Services.parse"
+						resultName="resultad1f9b83e9b245039b492d0568465388"
+						temporaryMapping="true"
+						x="48"
+						y="31"
+						invocationOrder="0"
+						asynchronous="false"
+						recache="false">
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="bde9d74f55c64cc5b5d0b292452c688e"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>input/stream</from>
+						<to>stream</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="d0f6fb0b64f649ae9d668396b8c6c6ae"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>XLSX</from>
+						<to>excelType</to>
+					</steps>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="aac67813febb441fad9934f0c1445bd1"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>result41f65a8b8f514200b96d7292dc8bc134/sheets</from>
+					<to>sheets</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="df556de4f05c4f6181d3ed870cb52d72"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>resultad1f9b83e9b245039b492d0568465388/workbook</from>
+					<to>workbook</to>
+				</steps>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+					disabled="false"
+					id="879a4d4fe6cc4434a4ff2bdb5a234255"
+					lineNumber="6">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+						disabled="false"
+						id="b74947ec07d74417afc3458f4e619801"
+						serviceId="nabu.data.excel.Services.toObject"
+						resultName="resulte5904f4e99824047b5ce7b34ef4f0ae6"
+						temporaryMapping="true"
+						x="412"
+						y="147"
+						invocationOrder="0"
+						asynchronous="false"
+						recache="false">
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="260b1d264e0440e1a7a580c20840c8bf"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>sheets[0]</from>
+						<to>typeId</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="d7a080cfda7e44d1aabc2dfeb653034a"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>workbook</from>
+						<to>workbook</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="3707bf034c384b5c8b226cee26bb32f8"
+							mask="false"
+							optional="false"
+							fixedValue="false">
+						<from>sheets[0]</from>
+						<to>sheet</to>
+					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="4944a4ffe1104bb289147919df003732"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>true</from>
+						<to>useHeaders</to>
+					</steps>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="8dbfb63c78bd4addb5ef16cd9ed84cd4"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>resulte5904f4e99824047b5ce7b34ef4f0ae6/results</from>
+					<to>output/container/results</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="c88c05e39c6a471e9085ebb80a70ce4a"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>sheets[0]</from>
+					<to>output/container/typeId</to>
+				</steps>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Throw"
+				disabled="false"
+				id="840b19535edd42a8820facc94fdf7854"
+				lineNumber="7"
+				message="Unsupported format"
+				whitelist="false" xsi:nil="true"/>
+	</steps>
+</sequence>

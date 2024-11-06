@@ -1,0 +1,11 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="stream" type="java.io.InputStream"/>
+        <field name="format" type="java.lang.String"/>
+    </structure>
+    <structure name="output">
+        <structure definition="nabu.services.jdbc.manage.rest.data.container" name="container"/>
+    </structure>
+    <field maxOccurs="unbounded" minOccurs="0" name="sheets" type="java.lang.String"/>
+    <structure definition="org.apache.poi.ss.usermodel.Workbook" minOccurs="0" name="workbook"/>
+</structure>

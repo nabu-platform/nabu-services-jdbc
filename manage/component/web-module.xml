@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <path>/jdbc</path>
+    <webFragments>nabu.services.jdbc.manage.rest.data.query</webFragments>
+    <webFragments>nabu.services.jdbc.manage.rest.data.merge</webFragments>
+    <webFragments>nabu.services.jdbc.manage.rest.data.download</webFragments>
+    <webFragments>nabu.services.jdbc.manage.rest.data.dryrun</webFragments>
+    <audience>MANAGER</audience>
+</webModule>

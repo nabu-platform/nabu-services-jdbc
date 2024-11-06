@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2024-10-17T13:22:52.271+02:00" lastModified="2024-10-18T09:54:08.773+02:00" leaf="true" version="8">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.services.jdbc.manage.rest.data.query</references>
+    <references>nabu.services.jdbc.manage.rest.data.merge</references>
+    <references>nabu.services.jdbc.manage.rest.data.download</references>
+    <references>nabu.services.jdbc.manage.rest.data.dryrun</references>
+</node>
